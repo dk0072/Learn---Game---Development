@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quizActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="SCORE : "
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="20sp"
+        android:layout_toEndOf="@+id/scoreText"
+        android:id="@+id/score"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400sp"
+        android:layout_height="350sp"
+        android:layout_margin="6sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/questionCanvas"
+        app:cardCornerRadius="6sp">
+
+        <TextView
+            android:layout_width="370sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/question"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="20sp"
+            android:text="Which one of following is Physics Component ? "/>
+
+
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/optionA"
+            android:layout_marginTop="80sp"
+            android:layout_marginStart="20sp" />
+
+
+        <Button
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/optionB"
+            android:layout_marginTop="130sp"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/optionC"
+            android:layout_marginTop="180sp"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/optionD"
+            android:layout_marginTop="230sp"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="160sp"
+            android:layout_height="60sp"
+            android:text="NEXT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/next"
+            android:layout_marginTop="280sp"
+            android:layout_marginStart="120sp"
+            android:textColor="@color/white"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="invisible"
+        android:layout_width="400sp"
+        android:layout_height="350sp"
+        android:layout_margin="6sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/scoreCanvas"
+        app:cardCornerRadius="6sp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCORE : "
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="130sp"
+            android:layout_marginStart="30sp"
+            android:id="@+id/finalScore"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERFORMANCE : "
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="170sp"
+            android:layout_marginStart="30sp"
+            android:id="@+id/finalRating"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

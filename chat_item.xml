@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3sp"
+        android:layout_marginTop="3sp"
+        android:layout_marginEnd="3sp"
+        android:layout_marginBottom="3sp"
+        app:cardBackgroundColor="@color/chat_bubble_bg"
+        app:cardCornerRadius="6sp">
+
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:text="UserName"
+            android:textColor="@color/userNameColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userComment"
+            android:layout_width="240sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textColor="@color/white"
+            android:text="@string/user_comment_here"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300sp"
+            android:layout_marginTop="10sp"
+            android:text="12/12/3044"
+            android:textSize="11sp" />
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/userTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300sp"
+            android:layout_marginTop="40sp"
+            android:text="12:22 AM"
+            android:textSize="11sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
